@@ -36,3 +36,7 @@ window/stretch/aspect="keep_width"
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/console/plugin.cfg")
+
+[filesystem]
+
+import/blender/enabled=false
