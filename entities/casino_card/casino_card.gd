@@ -2,7 +2,10 @@ class_name CasinoCard
 extends Node
 
 enum Suits {
+	# Default.
 	NONE = 0,
+	
+	# Standard.
 	CLUBS = 1,
 	DIAMONDS = 2,
 	HEARTS = 3,
@@ -10,7 +13,10 @@ enum Suits {
 }
 
 enum Ranks {
+	# Default.
 	NONE = 0,
+	
+	# Standard.
 	ACE = 1,
 	TWO = 2,
 	THREE = 3,
@@ -24,6 +30,9 @@ enum Ranks {
 	KING = 11,
 	QUEEN = 12,
 	JACK = 13,
+	
+	# Wildcard.
+	JOKER = 14,
 }
 
 @export var suit: Suits
