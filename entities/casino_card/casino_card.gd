@@ -38,8 +38,5 @@ enum Ranks {
 @export var suit: Suits
 @export var rank: Ranks
 
-var display_name: StringName
-
 func _ready() -> void:
-	display_name = str(rank, " of ", suit)
 	assert(suit != Suits.NONE and rank != Ranks.NONE)
