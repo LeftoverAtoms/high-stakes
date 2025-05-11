@@ -1,0 +1,213 @@
+[gd_scene load_steps=2 format=3 uid="uid://chws3cs35dnac"]
+
+[ext_resource type="PackedScene" uid="uid://xn10f6pn6n6" path="res://entities/casino_card/casino_card.tscn" id="1_iwvh5"]
+
+[node name="Deck" type="Node"]
+
+[node name="CasinoCard1" parent="." instance=ExtResource("1_iwvh5")]
+suit = 1
+rank = 1
+
+[node name="CasinoCard2" parent="." instance=ExtResource("1_iwvh5")]
+suit = 1
+rank = 2
+
+[node name="CasinoCard3" parent="." instance=ExtResource("1_iwvh5")]
+suit = 1
+rank = 3
+
+[node name="CasinoCard4" parent="." instance=ExtResource("1_iwvh5")]
+suit = 1
+rank = 4
+
+[node name="CasinoCard5" parent="." instance=ExtResource("1_iwvh5")]
+suit = 1
+rank = 5
+
+[node name="CasinoCard6" parent="." instance=ExtResource("1_iwvh5")]
+suit = 1
+rank = 6
+
+[node name="CasinoCard7" parent="." instance=ExtResource("1_iwvh5")]
+suit = 1
+rank = 7
+
+[node name="CasinoCard8" parent="." instance=ExtResource("1_iwvh5")]
+suit = 1
+rank = 8
+
+[node name="CasinoCard9" parent="." instance=ExtResource("1_iwvh5")]
+suit = 1
+rank = 9
+
+[node name="CasinoCard10" parent="." instance=ExtResource("1_iwvh5")]
+suit = 1
+rank = 10
+
+[node name="CasinoCard11" parent="." instance=ExtResource("1_iwvh5")]
+suit = 1
+rank = 11
+
+[node name="CasinoCard12" parent="." instance=ExtResource("1_iwvh5")]
+suit = 1
+rank = 12
+
+[node name="CasinoCard13" parent="." instance=ExtResource("1_iwvh5")]
+suit = 1
+rank = 13
+
+[node name="CasinoCard14" parent="." instance=ExtResource("1_iwvh5")]
+suit = 2
+rank = 1
+
+[node name="CasinoCard15" parent="." instance=ExtResource("1_iwvh5")]
+suit = 2
+rank = 2
+
+[node name="CasinoCard16" parent="." instance=ExtResource("1_iwvh5")]
+suit = 2
+rank = 3
+
+[node name="CasinoCard17" parent="." instance=ExtResource("1_iwvh5")]
+suit = 2
+rank = 4
+
+[node name="CasinoCard18" parent="." instance=ExtResource("1_iwvh5")]
+suit = 2
+rank = 5
+
+[node name="CasinoCard19" parent="." instance=ExtResource("1_iwvh5")]
+suit = 2
+rank = 6
+
+[node name="CasinoCard20" parent="." instance=ExtResource("1_iwvh5")]
+suit = 2
+rank = 7
+
+[node name="CasinoCard21" parent="." instance=ExtResource("1_iwvh5")]
+suit = 2
+rank = 8
+
+[node name="CasinoCard22" parent="." instance=ExtResource("1_iwvh5")]
+suit = 2
+rank = 9
+
+[node name="CasinoCard23" parent="." instance=ExtResource("1_iwvh5")]
+suit = 2
+rank = 10
+
+[node name="CasinoCard24" parent="." instance=ExtResource("1_iwvh5")]
+suit = 2
+rank = 11
+
+[node name="CasinoCard25" parent="." instance=ExtResource("1_iwvh5")]
+suit = 2
+rank = 12
+
+[node name="CasinoCard26" parent="." instance=ExtResource("1_iwvh5")]
+suit = 2
+rank = 13
+
+[node name="CasinoCard27" parent="." instance=ExtResource("1_iwvh5")]
+suit = 3
+rank = 1
+
+[node name="CasinoCard28" parent="." instance=ExtResource("1_iwvh5")]
+suit = 3
+rank = 2
+
+[node name="CasinoCard29" parent="." instance=ExtResource("1_iwvh5")]
+suit = 3
+rank = 3
+
+[node name="CasinoCard30" parent="." instance=ExtResource("1_iwvh5")]
+suit = 3
+rank = 4
+
+[node name="CasinoCard31" parent="." instance=ExtResource("1_iwvh5")]
+suit = 3
+rank = 5
+
+[node name="CasinoCard32" parent="." instance=ExtResource("1_iwvh5")]
+suit = 3
+rank = 6
+
+[node name="CasinoCard33" parent="." instance=ExtResource("1_iwvh5")]
+suit = 3
+rank = 7
+
+[node name="CasinoCard34" parent="." instance=ExtResource("1_iwvh5")]
+suit = 3
+rank = 8
+
+[node name="CasinoCard35" parent="." instance=ExtResource("1_iwvh5")]
+suit = 3
+rank = 9
+
+[node name="CasinoCard36" parent="." instance=ExtResource("1_iwvh5")]
+suit = 3
+rank = 10
+
+[node name="CasinoCard37" parent="." instance=ExtResource("1_iwvh5")]
+suit = 3
+rank = 11
+
+[node name="CasinoCard38" parent="." instance=ExtResource("1_iwvh5")]
+suit = 3
+rank = 12
+
+[node name="CasinoCard39" parent="." instance=ExtResource("1_iwvh5")]
+suit = 3
+rank = 13
+
+[node name="CasinoCard40" parent="." instance=ExtResource("1_iwvh5")]
+suit = 4
+rank = 1
+
+[node name="CasinoCard41" parent="." instance=ExtResource("1_iwvh5")]
+suit = 4
+rank = 2
+
+[node name="CasinoCard42" parent="." instance=ExtResource("1_iwvh5")]
+suit = 4
+rank = 3
+
+[node name="CasinoCard43" parent="." instance=ExtResource("1_iwvh5")]
+suit = 4
+rank = 4
+
+[node name="CasinoCard44" parent="." instance=ExtResource("1_iwvh5")]
+suit = 4
+rank = 5
+
+[node name="CasinoCard45" parent="." instance=ExtResource("1_iwvh5")]
+suit = 4
+rank = 6
+
+[node name="CasinoCard46" parent="." instance=ExtResource("1_iwvh5")]
+suit = 4
+rank = 7
+
+[node name="CasinoCard47" parent="." instance=ExtResource("1_iwvh5")]
+suit = 4
+rank = 8
+
+[node name="CasinoCard48" parent="." instance=ExtResource("1_iwvh5")]
+suit = 4
+rank = 9
+
+[node name="CasinoCard49" parent="." instance=ExtResource("1_iwvh5")]
+suit = 4
+rank = 10
+
+[node name="CasinoCard50" parent="." instance=ExtResource("1_iwvh5")]
+suit = 4
+rank = 11
+
+[node name="CasinoCard51" parent="." instance=ExtResource("1_iwvh5")]
+suit = 4
+rank = 12
+
+[node name="CasinoCard52" parent="." instance=ExtResource("1_iwvh5")]
+suit = 4
+rank = 13
