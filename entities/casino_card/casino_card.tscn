@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://xn10f6pn6n6"]
+
+[ext_resource type="Script" uid="uid://bcqk71rhaiwc8" path="res://entities/casino_card/casino_card.gd" id="1_13twy"]
+
+[node name="CasinoCard" type="ColorRect"]
+custom_minimum_size = Vector2(176, 256)
+script = ExtResource("1_13twy")
