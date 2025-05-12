@@ -4,210 +4,210 @@
 
 [node name="Deck" type="Node"]
 
-[node name="CasinoCard1" parent="." instance=ExtResource("1_iwvh5")]
+[node name="AceOfClubs" parent="." instance=ExtResource("1_iwvh5")]
 suit = 1
 rank = 1
 
-[node name="CasinoCard2" parent="." instance=ExtResource("1_iwvh5")]
+[node name="TwoOfClubs" parent="." instance=ExtResource("1_iwvh5")]
 suit = 1
 rank = 2
 
-[node name="CasinoCard3" parent="." instance=ExtResource("1_iwvh5")]
+[node name="ThreeOfClubs" parent="." instance=ExtResource("1_iwvh5")]
 suit = 1
 rank = 3
 
-[node name="CasinoCard4" parent="." instance=ExtResource("1_iwvh5")]
+[node name="FourOfClubs" parent="." instance=ExtResource("1_iwvh5")]
 suit = 1
 rank = 4
 
-[node name="CasinoCard5" parent="." instance=ExtResource("1_iwvh5")]
+[node name="FiveOfClubs" parent="." instance=ExtResource("1_iwvh5")]
 suit = 1
 rank = 5
 
-[node name="CasinoCard6" parent="." instance=ExtResource("1_iwvh5")]
+[node name="SixOfClubs" parent="." instance=ExtResource("1_iwvh5")]
 suit = 1
 rank = 6
 
-[node name="CasinoCard7" parent="." instance=ExtResource("1_iwvh5")]
+[node name="SevenOfClubs" parent="." instance=ExtResource("1_iwvh5")]
 suit = 1
 rank = 7
 
-[node name="CasinoCard8" parent="." instance=ExtResource("1_iwvh5")]
+[node name="EightOfClubs" parent="." instance=ExtResource("1_iwvh5")]
 suit = 1
 rank = 8
 
-[node name="CasinoCard9" parent="." instance=ExtResource("1_iwvh5")]
+[node name="NineOfClubs" parent="." instance=ExtResource("1_iwvh5")]
 suit = 1
 rank = 9
 
-[node name="CasinoCard10" parent="." instance=ExtResource("1_iwvh5")]
+[node name="TenOfClubs" parent="." instance=ExtResource("1_iwvh5")]
 suit = 1
 rank = 10
 
-[node name="CasinoCard11" parent="." instance=ExtResource("1_iwvh5")]
+[node name="KingOfClubs" parent="." instance=ExtResource("1_iwvh5")]
 suit = 1
 rank = 11
 
-[node name="CasinoCard12" parent="." instance=ExtResource("1_iwvh5")]
+[node name="QueenOfClubs" parent="." instance=ExtResource("1_iwvh5")]
 suit = 1
 rank = 12
 
-[node name="CasinoCard13" parent="." instance=ExtResource("1_iwvh5")]
+[node name="JackOfClubs" parent="." instance=ExtResource("1_iwvh5")]
 suit = 1
 rank = 13
 
-[node name="CasinoCard14" parent="." instance=ExtResource("1_iwvh5")]
+[node name="AceOfDiamonds" parent="." instance=ExtResource("1_iwvh5")]
 suit = 2
 rank = 1
 
-[node name="CasinoCard15" parent="." instance=ExtResource("1_iwvh5")]
+[node name="TwoOfDiamonds" parent="." instance=ExtResource("1_iwvh5")]
 suit = 2
 rank = 2
 
-[node name="CasinoCard16" parent="." instance=ExtResource("1_iwvh5")]
+[node name="ThreeOfDiamonds" parent="." instance=ExtResource("1_iwvh5")]
 suit = 2
 rank = 3
 
-[node name="CasinoCard17" parent="." instance=ExtResource("1_iwvh5")]
+[node name="FourOfDiamonds" parent="." instance=ExtResource("1_iwvh5")]
 suit = 2
 rank = 4
 
-[node name="CasinoCard18" parent="." instance=ExtResource("1_iwvh5")]
+[node name="FiveOfDiamonds" parent="." instance=ExtResource("1_iwvh5")]
 suit = 2
 rank = 5
 
-[node name="CasinoCard19" parent="." instance=ExtResource("1_iwvh5")]
+[node name="SixOfDiamonds" parent="." instance=ExtResource("1_iwvh5")]
 suit = 2
 rank = 6
 
-[node name="CasinoCard20" parent="." instance=ExtResource("1_iwvh5")]
+[node name="SevenOfDiamonds" parent="." instance=ExtResource("1_iwvh5")]
 suit = 2
 rank = 7
 
-[node name="CasinoCard21" parent="." instance=ExtResource("1_iwvh5")]
+[node name="EightOfDiamonds" parent="." instance=ExtResource("1_iwvh5")]
 suit = 2
 rank = 8
 
-[node name="CasinoCard22" parent="." instance=ExtResource("1_iwvh5")]
+[node name="NineOfDiamonds" parent="." instance=ExtResource("1_iwvh5")]
 suit = 2
 rank = 9
 
-[node name="CasinoCard23" parent="." instance=ExtResource("1_iwvh5")]
+[node name="TenOfDiamonds" parent="." instance=ExtResource("1_iwvh5")]
 suit = 2
 rank = 10
 
-[node name="CasinoCard24" parent="." instance=ExtResource("1_iwvh5")]
+[node name="KingOfDiamonds" parent="." instance=ExtResource("1_iwvh5")]
 suit = 2
 rank = 11
 
-[node name="CasinoCard25" parent="." instance=ExtResource("1_iwvh5")]
+[node name="QueenOfDiamonds" parent="." instance=ExtResource("1_iwvh5")]
 suit = 2
 rank = 12
 
-[node name="CasinoCard26" parent="." instance=ExtResource("1_iwvh5")]
+[node name="JackOfDiamonds" parent="." instance=ExtResource("1_iwvh5")]
 suit = 2
 rank = 13
 
-[node name="CasinoCard27" parent="." instance=ExtResource("1_iwvh5")]
+[node name="AceOfHearts" parent="." instance=ExtResource("1_iwvh5")]
 suit = 3
 rank = 1
 
-[node name="CasinoCard28" parent="." instance=ExtResource("1_iwvh5")]
+[node name="TwoOfHearts" parent="." instance=ExtResource("1_iwvh5")]
 suit = 3
 rank = 2
 
-[node name="CasinoCard29" parent="." instance=ExtResource("1_iwvh5")]
+[node name="ThreeOfHearts" parent="." instance=ExtResource("1_iwvh5")]
 suit = 3
 rank = 3
 
-[node name="CasinoCard30" parent="." instance=ExtResource("1_iwvh5")]
+[node name="FourOfHearts" parent="." instance=ExtResource("1_iwvh5")]
 suit = 3
 rank = 4
 
-[node name="CasinoCard31" parent="." instance=ExtResource("1_iwvh5")]
+[node name="FiveOfHearts" parent="." instance=ExtResource("1_iwvh5")]
 suit = 3
 rank = 5
 
-[node name="CasinoCard32" parent="." instance=ExtResource("1_iwvh5")]
+[node name="SixOfHearts" parent="." instance=ExtResource("1_iwvh5")]
 suit = 3
 rank = 6
 
-[node name="CasinoCard33" parent="." instance=ExtResource("1_iwvh5")]
+[node name="SevenOfHearts" parent="." instance=ExtResource("1_iwvh5")]
 suit = 3
 rank = 7
 
-[node name="CasinoCard34" parent="." instance=ExtResource("1_iwvh5")]
+[node name="EightOfHearts" parent="." instance=ExtResource("1_iwvh5")]
 suit = 3
 rank = 8
 
-[node name="CasinoCard35" parent="." instance=ExtResource("1_iwvh5")]
+[node name="NineOfHearts" parent="." instance=ExtResource("1_iwvh5")]
 suit = 3
 rank = 9
 
-[node name="CasinoCard36" parent="." instance=ExtResource("1_iwvh5")]
+[node name="TenOfHearts" parent="." instance=ExtResource("1_iwvh5")]
 suit = 3
 rank = 10
 
-[node name="CasinoCard37" parent="." instance=ExtResource("1_iwvh5")]
+[node name="KingOfHearts" parent="." instance=ExtResource("1_iwvh5")]
 suit = 3
 rank = 11
 
-[node name="CasinoCard38" parent="." instance=ExtResource("1_iwvh5")]
+[node name="QueenOfHearts" parent="." instance=ExtResource("1_iwvh5")]
 suit = 3
 rank = 12
 
-[node name="CasinoCard39" parent="." instance=ExtResource("1_iwvh5")]
+[node name="JackOfHearts" parent="." instance=ExtResource("1_iwvh5")]
 suit = 3
 rank = 13
 
-[node name="CasinoCard40" parent="." instance=ExtResource("1_iwvh5")]
+[node name="AceOfSpades" parent="." instance=ExtResource("1_iwvh5")]
 suit = 4
 rank = 1
 
-[node name="CasinoCard41" parent="." instance=ExtResource("1_iwvh5")]
+[node name="TwoOfSpades" parent="." instance=ExtResource("1_iwvh5")]
 suit = 4
 rank = 2
 
-[node name="CasinoCard42" parent="." instance=ExtResource("1_iwvh5")]
+[node name="ThreeOfSpades" parent="." instance=ExtResource("1_iwvh5")]
 suit = 4
 rank = 3
 
-[node name="CasinoCard43" parent="." instance=ExtResource("1_iwvh5")]
+[node name="FourOfSpades" parent="." instance=ExtResource("1_iwvh5")]
 suit = 4
 rank = 4
 
-[node name="CasinoCard44" parent="." instance=ExtResource("1_iwvh5")]
+[node name="FiveOfSpades" parent="." instance=ExtResource("1_iwvh5")]
 suit = 4
 rank = 5
 
-[node name="CasinoCard45" parent="." instance=ExtResource("1_iwvh5")]
+[node name="SixOfSpades" parent="." instance=ExtResource("1_iwvh5")]
 suit = 4
 rank = 6
 
-[node name="CasinoCard46" parent="." instance=ExtResource("1_iwvh5")]
+[node name="SevenOfSpades" parent="." instance=ExtResource("1_iwvh5")]
 suit = 4
 rank = 7
 
-[node name="CasinoCard47" parent="." instance=ExtResource("1_iwvh5")]
+[node name="EightOfSpades" parent="." instance=ExtResource("1_iwvh5")]
 suit = 4
 rank = 8
 
-[node name="CasinoCard48" parent="." instance=ExtResource("1_iwvh5")]
+[node name="NineOfSpades" parent="." instance=ExtResource("1_iwvh5")]
 suit = 4
 rank = 9
 
-[node name="CasinoCard49" parent="." instance=ExtResource("1_iwvh5")]
+[node name="TenOfSpades" parent="." instance=ExtResource("1_iwvh5")]
 suit = 4
 rank = 10
 
-[node name="CasinoCard50" parent="." instance=ExtResource("1_iwvh5")]
+[node name="KingOfSpades" parent="." instance=ExtResource("1_iwvh5")]
 suit = 4
 rank = 11
 
-[node name="CasinoCard51" parent="." instance=ExtResource("1_iwvh5")]
+[node name="QueenOfSpades" parent="." instance=ExtResource("1_iwvh5")]
 suit = 4
 rank = 12
 
-[node name="CasinoCard52" parent="." instance=ExtResource("1_iwvh5")]
+[node name="JackOfSpades" parent="." instance=ExtResource("1_iwvh5")]
 suit = 4
 rank = 13
