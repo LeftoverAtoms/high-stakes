@@ -38,5 +38,14 @@ enum Ranks {
 @export var suit: Suits
 @export var rank: Ranks
 
+@export var front_texture: Texture2D
+@export var back_texture: Texture2D
+
+@onready var front_rect: TextureRect = $Front
+@onready var back_rect: TextureRect = $Back
+
+
 func _ready() -> void:
 	assert(suit != Suits.NONE and rank != Ranks.NONE)
+	front_rect.texture = front_texture
+	back_rect.texture = back_texture
