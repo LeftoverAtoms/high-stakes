@@ -1,7 +1,23 @@
-[gd_scene load_steps=2 format=3 uid="uid://xn10f6pn6n6"]
+[gd_scene load_steps=3 format=3 uid="uid://xn10f6pn6n6"]
 
 [ext_resource type="Script" uid="uid://bcqk71rhaiwc8" path="res://entities/casino_card/casino_card.gd" id="1_13twy"]
+[ext_resource type="Texture2D" uid="uid://g487r8vy1tl2" path="res://entities/casino_card/textures/blank.svg" id="2_k41sx"]
 
-[node name="CasinoCard" type="ColorRect"]
-custom_minimum_size = Vector2(176, 256)
+[node name="CasinoCard" type="MarginContainer"]
+offset_right = 240.0
+offset_bottom = 336.0
 script = ExtResource("1_13twy")
+
+[node name="Front" type="TextureRect" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+texture = ExtResource("2_k41sx")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="Back" type="TextureRect" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+texture = ExtResource("2_k41sx")
+expand_mode = 1
+stretch_mode = 4
