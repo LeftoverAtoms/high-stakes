@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://d14g0j7isvqn3" path="res://entities/card/back.tres" id="1_mw8v8"]
 [ext_resource type="Texture2D" uid="uid://cvuyqckdwy4dy" path="res://entities/card/textures.png" id="2_mw8v8"]
-[ext_resource type="Script" uid="uid://bcqk71rhaiwc8" path="res://entities/card/card.gd" id="3_ic82s"]
+[ext_resource type="Script" uid="uid://bcqk71rhaiwc8" path="res://entities/card/card_def.gd" id="3_ic82s"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yb6nl"]
 atlas = ExtResource("2_mw8v8")
