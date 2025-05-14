@@ -1,3 +1,53 @@
-[gd_scene format=3 uid="uid://vnia4uuaq1rn"]
+[gd_scene load_steps=2 format=3 uid="uid://vnia4uuaq1rn"]
+
+[ext_resource type="Texture2D" uid="uid://d14g0j7isvqn3" path="res://entities/card/back.tres" id="1_ig7tw"]
 
 [node name="Main" type="Node"]
+
+[node name="Solitaire" type="VBoxContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 1.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 64
+
+[node name="Upper" type="MarginContainer" parent="Solitaire"]
+layout_mode = 2
+
+[node name="Deck" type="HBoxContainer" parent="Solitaire/Upper"]
+layout_mode = 2
+
+[node name="Stock" type="TextureRect" parent="Solitaire/Upper/Deck"]
+layout_mode = 2
+texture = ExtResource("1_ig7tw")
+
+[node name="Waste" type="TextureRect" parent="Solitaire/Upper/Deck"]
+layout_mode = 2
+texture = ExtResource("1_ig7tw")
+
+[node name="Foundation" type="HBoxContainer" parent="Solitaire/Upper"]
+layout_mode = 2
+alignment = 2
+
+[node name="Foundation1" type="TextureRect" parent="Solitaire/Upper/Foundation"]
+layout_mode = 2
+texture = ExtResource("1_ig7tw")
+
+[node name="Foundation2" type="TextureRect" parent="Solitaire/Upper/Foundation"]
+layout_mode = 2
+texture = ExtResource("1_ig7tw")
+
+[node name="Foundation3" type="TextureRect" parent="Solitaire/Upper/Foundation"]
+layout_mode = 2
+texture = ExtResource("1_ig7tw")
+
+[node name="Foundation4" type="TextureRect" parent="Solitaire/Upper/Foundation"]
+layout_mode = 2
+texture = ExtResource("1_ig7tw")
+
+[node name="Tableau" type="HBoxContainer" parent="Solitaire"]
+layout_mode = 2
+size_flags_vertical = 3
