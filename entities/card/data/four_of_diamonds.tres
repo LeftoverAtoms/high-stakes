@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="CasinoCard" load_steps=5 format=3 uid="uid://wwvookaurjcy"]
+
+[ext_resource type="Texture2D" uid="uid://d14g0j7isvqn3" path="res://entities/card/back.tres" id="1_ytsh6"]
+[ext_resource type="Texture2D" uid="uid://cvuyqckdwy4dy" path="res://entities/card/textures.png" id="2_ytsh6"]
+[ext_resource type="Script" uid="uid://bcqk71rhaiwc8" path="res://entities/card/card.gd" id="3_35yaw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sot3y"]
+atlas = ExtResource("2_ytsh6")
+region = Rect2(320, 64, 64, 64)
+
+[resource]
+script = ExtResource("3_35yaw")
+suit = 2
+rank = 4
+front_texture = SubResource("AtlasTexture_sot3y")
+back_texture = ExtResource("1_ytsh6")
+metadata/_custom_type_script = "uid://bcqk71rhaiwc8"
