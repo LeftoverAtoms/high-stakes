@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="CasinoCard" load_steps=5 format=3 uid="uid://cuqcm6f65tesg"]
+[gd_resource type="Resource" script_class="CardDef" load_steps=5 format=3 uid="uid://cuqcm6f65tesg"]
 
 [ext_resource type="Texture2D" uid="uid://d14g0j7isvqn3" path="res://entities/card/back.tres" id="1_a03bf"]
 [ext_resource type="Texture2D" uid="uid://cvuyqckdwy4dy" path="res://entities/card/textures.png" id="2_1n7ts"]

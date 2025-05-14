@@ -1,10 +1,10 @@
 [gd_scene load_steps=8 format=3 uid="uid://xn10f6pn6n6"]
 
-[ext_resource type="Texture2D" uid="uid://g487r8vy1tl2" path="res://entities/card/textures/blank.svg" id="2_k41sx"]
 [ext_resource type="Animation" uid="uid://ca054ssdw5uh8" path="res://entities/card/animations/reset.res" id="3_mi7pm"]
 [ext_resource type="Animation" uid="uid://dyqrhwgspwc6k" path="res://entities/card/animations/face_up_idle.res" id="4_w7box"]
 [ext_resource type="Animation" uid="uid://b3gprgaa27qgv" path="res://entities/card/animations/face_up.res" id="5_4o4x5"]
 [ext_resource type="Animation" uid="uid://b6ie8nxe8klo8" path="res://entities/card/animations/face_down_idle.res" id="6_7r4ut"]
+[ext_resource type="Texture2D" uid="uid://d14g0j7isvqn3" path="res://entities/card/back.tres" id="6_iw0dl"]
 [ext_resource type="Animation" uid="uid://3kbcrlknanck" path="res://entities/card/animations/face_down.res" id="7_7r4ut"]
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ducyb"]
@@ -31,13 +31,9 @@ libraries = {
 [node name="Front" type="TextureRect" parent="."]
 unique_name_in_owner = true
 layout_mode = 2
-texture = ExtResource("2_k41sx")
-expand_mode = 1
-stretch_mode = 4
+texture = ExtResource("6_iw0dl")
 
 [node name="Back" type="TextureRect" parent="."]
 unique_name_in_owner = true
 layout_mode = 2
-texture = ExtResource("2_k41sx")
-expand_mode = 1
-stretch_mode = 4
+texture = ExtResource("6_iw0dl")

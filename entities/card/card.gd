@@ -1,4 +1,4 @@
-class_name CasinoCard
+class_name CardDef
 extends Resource
 
 enum Suits {

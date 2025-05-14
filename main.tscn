@@ -21,10 +21,12 @@ layout_mode = 2
 layout_mode = 2
 
 [node name="Stock" type="TextureRect" parent="Solitaire/Upper/Deck"]
+custom_minimum_size = Vector2(240, 336)
 layout_mode = 2
 texture = ExtResource("1_ig7tw")
 
 [node name="Waste" type="TextureRect" parent="Solitaire/Upper/Deck"]
+custom_minimum_size = Vector2(240, 336)
 layout_mode = 2
 texture = ExtResource("1_ig7tw")
 
@@ -33,18 +35,22 @@ layout_mode = 2
 alignment = 2
 
 [node name="Foundation1" type="TextureRect" parent="Solitaire/Upper/Foundation"]
+custom_minimum_size = Vector2(240, 336)
 layout_mode = 2
 texture = ExtResource("1_ig7tw")
 
 [node name="Foundation2" type="TextureRect" parent="Solitaire/Upper/Foundation"]
+custom_minimum_size = Vector2(240, 336)
 layout_mode = 2
 texture = ExtResource("1_ig7tw")
 
 [node name="Foundation3" type="TextureRect" parent="Solitaire/Upper/Foundation"]
+custom_minimum_size = Vector2(240, 336)
 layout_mode = 2
 texture = ExtResource("1_ig7tw")
 
 [node name="Foundation4" type="TextureRect" parent="Solitaire/Upper/Foundation"]
+custom_minimum_size = Vector2(240, 336)
 layout_mode = 2
 texture = ExtResource("1_ig7tw")
 
