@@ -4,7 +4,7 @@ extends Node
 enum Suits {
 	# Default.
 	NONE = 0,
-	
+
 	# Standard.
 	CLUBS = 1,
 	DIAMONDS = 2,
@@ -15,7 +15,7 @@ enum Suits {
 enum Ranks {
 	# Default.
 	NONE = 0,
-	
+
 	# Standard.
 	ACE = 1,
 	TWO = 2,
@@ -30,7 +30,7 @@ enum Ranks {
 	KING = 11,
 	QUEEN = 12,
 	JACK = 13,
-	
+
 	# Wildcard.
 	JOKER = 14,
 }
