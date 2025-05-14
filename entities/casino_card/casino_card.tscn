@@ -7,6 +7,8 @@
 offset_right = 240.0
 offset_bottom = 336.0
 script = ExtResource("1_13twy")
+front_texture = ExtResource("2_k41sx")
+back_texture = ExtResource("2_k41sx")
 
 [node name="Front" type="TextureRect" parent="."]
 unique_name_in_owner = true
