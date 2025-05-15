@@ -35,7 +35,12 @@ enum Ranks {
 	JOKER = 14,
 }
 
-const DATA: Array = [
+const DATA: Array[Dictionary] = [
+	{
+		&"rank": Ranks.ACE,
+		&"suit": Suits.CLUBS,
+		&"graphic": preload("res://entities/card/textures/ace_of_clubs.tres"),
+	},
 	{
 		&"rank": Ranks.TWO,
 		&"suit": Suits.CLUBS,
@@ -303,8 +308,15 @@ static func new_card(data: Dictionary) -> Card:
 	var card: Card = PREFAB.instantiate()
 	card.rank = data.rank
 	card.suit = data.suit
+	card._apply_name()
 	card._set_textures(data.graphic, null)
 	return card
+
+
+func _apply_name() -> void:
+	var rank_key: StringName = Ranks.keys()[rank].capitalize()
+	var suit_key: StringName = Suits.keys()[suit].capitalize()
+	name = str(rank_key) + "Of" + str(suit_key)
 
 
 func _set_textures(front: Texture2D, back: Texture2D) -> void:
