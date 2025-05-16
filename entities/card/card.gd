@@ -304,19 +304,25 @@ var rank: Ranks
 var suit: Suits
 
 
-static func new_card(data: Dictionary) -> Card:
+static func new_card(data: Dictionary, parent: Node) -> Card:
 	var card: Card = PREFAB.instantiate()
+
 	card.rank = data.rank
 	card.suit = data.suit
+
 	card._apply_name()
 	card._set_textures(data.graphic, null)
+
+	parent.add_child(card)
+
 	return card
 
 
 func _apply_name() -> void:
-	var rank_key: StringName = Ranks.keys()[rank].capitalize()
-	var suit_key: StringName = Suits.keys()[suit].capitalize()
-	name = str(rank_key) + "Of" + str(suit_key)
+	var rank_name: StringName = Ranks.keys()[rank].capitalize()
+	var suit_name: StringName = Suits.keys()[suit].capitalize()
+
+	name = str(rank_name) + "Of" + str(suit_name)
 
 
 func _set_textures(front: Texture2D, back: Texture2D) -> void:
