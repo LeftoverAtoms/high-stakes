@@ -17,6 +17,10 @@ static func new_deck(parent: Node) -> Deck:
 
 
 func shuffle() -> void:
+	# Return dealt cards.
+	_cards.append_array(_cards_dealt)
+	_cards_dealt.clear()
+
 	_cards.shuffle()
 
 
