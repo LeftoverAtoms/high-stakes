@@ -1,7 +1,7 @@
 # Blender 4.3.2
 # www.blender.org
-mtllib casino_chip.mtl
-o casino_chip
+mtllib chip.mtl
+o chip
 v -0.000000 -0.001650 -0.028053
 v -0.000000 -0.000796 -0.039000
 v -0.000000 -0.000796 -0.039000
