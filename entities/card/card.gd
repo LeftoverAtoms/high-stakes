@@ -310,8 +310,8 @@ static func new_card(data: Dictionary, parent: Node) -> Card:
 	var card: Card = PREFAB.instantiate()
 
 	# Always use get to parse dictionaries.
-	card.rank = data.get("rank", Ranks.NONE)
-	card.suit = data.get("suit", Suits.NONE)
+	card.rank = data.get(&"rank", Ranks.NONE)
+	card.suit = data.get(&"suit", Suits.NONE)
 
 	card._set_name()
 	card._set_textures(data.graphic, null)
