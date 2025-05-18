@@ -317,7 +317,7 @@ static func new_card(data: Dictionary, parent: Node) -> Card:
 	card._set_textures(data.graphic, null)
 
 	parent.add_child(card, true)
-	card.in_deck = true
+	card.in_deck = parent is Deck
 
 	return card
 
