@@ -1,46 +1,40 @@
 class_name Deck
 extends Node
 
-const DEBUG: bool = true
 const PREFAB: PackedScene = preload("uid://chws3cs35dnac")
 
 var _cards: Array[Card]
-var _cards_dealt: Array[Card]
 
 
 static func new_deck(parent: Node) -> Deck:
 	var deck: Deck = PREFAB.instantiate()
 
-	parent.add_child(deck)
+	parent.add_child(deck, true)
 
 	return deck
 
 
 func shuffle() -> void:
-	# Return dealt cards.
-	_cards.append_array(_cards_dealt)
-	_cards_dealt.clear()
+	for card: Card in _cards:
+		card.in_deck = true
 
 	_cards.shuffle()
 
 
 ## Remove X cards from the deck.
 func hit(amount: int = 1) -> Array[Card]:
-	# Separate cards into two arrays.
-	# Cards are removed from the end.
-	var result: Array[Card] = _cards.slice(-1, -1 -amount, -1)
-	_cards.resize(_cards.size() - result.size())
+	var result: Array[Card]
 
-	# Remember removed cards that belong to this deck.
-	_cards_dealt.append_array(result)
+	for card: Card in _cards:
+		if amount <= 0:
+			break
 
-	if DEBUG:
-		print("Drew ", result.size(), "/", amount, " cards")
+		if not card.in_deck:
+			continue
 
-		for card: Card in result:
-			print(card.name)
-
-		print("")
+		card.in_deck = false
+		result.append(card)
+		amount -= 1
 
 	return result
 
@@ -53,8 +47,3 @@ func _ready() -> void:
 		var card: Card = Card.new_card(data, self)
 
 		_cards[i] = card
-
-
-func _input(event: InputEvent) -> void:
-	if DEBUG and event.is_action_pressed("ui_accept"):
-		hit(12)

@@ -300,6 +300,8 @@ const DATA: Array[Dictionary] = [
 
 const PREFAB: PackedScene = preload("uid://xn10f6pn6n6")
 
+var in_deck: bool
+
 var rank: Ranks
 var suit: Suits
 
@@ -307,22 +309,30 @@ var suit: Suits
 static func new_card(data: Dictionary, parent: Node) -> Card:
 	var card: Card = PREFAB.instantiate()
 
-	card.rank = data.rank
-	card.suit = data.suit
+	# Always use get to parse dictionaries.
+	card.rank = data.get("rank", Ranks.NONE)
+	card.suit = data.get("suit", Suits.NONE)
 
-	card._apply_name()
+	card._set_name()
 	card._set_textures(data.graphic, null)
 
-	parent.add_child(card)
+	parent.add_child(card, true)
+	card.in_deck = true
 
 	return card
 
 
-func _apply_name() -> void:
-	var rank_name: StringName = Ranks.keys()[rank].capitalize()
-	var suit_name: StringName = Suits.keys()[suit].capitalize()
+# TODO: Fetch localized strings from enum keys.
+func _set_name() -> void:
+	# Use variant because null strings do not exist.
+	var r: Variant = Ranks.find_key(rank)
+	var s: Variant = Suits.find_key(suit)
 
-	name = str(rank_name) + "Of" + str(suit_name)
+	# Name cannot be salvaged will appear null or none.
+	assert(r != null and rank != Ranks.NONE, "Ranks[%s] is invalid" % [rank])
+	assert(s != null and suit != Suits.NONE, "Suits[%s] is invalid" % [suit])
+
+	name = ("%s_OF_%s" % [r, s]).to_pascal_case()
 
 
 func _set_textures(front: Texture2D, back: Texture2D) -> void:
