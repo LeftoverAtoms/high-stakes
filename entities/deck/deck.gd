@@ -33,7 +33,7 @@ func hit(amount: int = 1) -> Array[Card]:
 			continue
 
 		card.in_deck = false
-		result.append(card)
+		result.push_back(card)
 		amount -= 1
 
 	return result
