@@ -27,9 +27,9 @@ enum Ranks {
 	EIGHT = 8,
 	NINE = 9,
 	TEN = 10,
-	KING = 11,
+	JACK = 11,
 	QUEEN = 12,
-	JACK = 13,
+	KING = 13,
 
 	# Wildcard.
 	JOKER = 14,
@@ -87,9 +87,9 @@ const DATA: Array[Dictionary] = [
 		&"graphic": preload("res://entities/card/textures/ten_of_clubs.tres"),
 	},
 	{
-		&"rank": Ranks.KING,
+		&"rank": Ranks.JACK,
 		&"suit": Suits.CLUBS,
-		&"graphic": preload("res://entities/card/textures/king_of_clubs.tres"),
+		&"graphic": preload("res://entities/card/textures/jack_of_clubs.tres"),
 	},
 	{
 		&"rank": Ranks.QUEEN,
@@ -97,9 +97,9 @@ const DATA: Array[Dictionary] = [
 		&"graphic": preload("res://entities/card/textures/queen_of_clubs.tres"),
 	},
 	{
-		&"rank": Ranks.JACK,
+		&"rank": Ranks.KING,
 		&"suit": Suits.CLUBS,
-		&"graphic": preload("res://entities/card/textures/jack_of_clubs.tres"),
+		&"graphic": preload("res://entities/card/textures/king_of_clubs.tres"),
 	},
 	{
 		&"rank": Ranks.ACE,
@@ -152,9 +152,9 @@ const DATA: Array[Dictionary] = [
 		&"graphic": preload("res://entities/card/textures/ten_of_diamonds.tres"),
 	},
 	{
-		&"rank": Ranks.KING,
+		&"rank": Ranks.JACK,
 		&"suit": Suits.DIAMONDS,
-		&"graphic": preload("res://entities/card/textures/king_of_diamonds.tres"),
+		&"graphic": preload("res://entities/card/textures/jack_of_diamonds.tres"),
 	},
 	{
 		&"rank": Ranks.QUEEN,
@@ -162,9 +162,9 @@ const DATA: Array[Dictionary] = [
 		&"graphic": preload("res://entities/card/textures/queen_of_diamonds.tres"),
 	},
 	{
-		&"rank": Ranks.JACK,
+		&"rank": Ranks.KING,
 		&"suit": Suits.DIAMONDS,
-		&"graphic": preload("res://entities/card/textures/jack_of_diamonds.tres"),
+		&"graphic": preload("res://entities/card/textures/king_of_diamonds.tres"),
 	},
 	{
 		&"rank": Ranks.ACE,
@@ -217,9 +217,9 @@ const DATA: Array[Dictionary] = [
 		&"graphic": preload("res://entities/card/textures/ten_of_hearts.tres"),
 	},
 	{
-		&"rank": Ranks.KING,
+		&"rank": Ranks.JACK,
 		&"suit": Suits.HEARTS,
-		&"graphic": preload("res://entities/card/textures/king_of_hearts.tres"),
+		&"graphic": preload("res://entities/card/textures/jack_of_hearts.tres"),
 	},
 	{
 		&"rank": Ranks.QUEEN,
@@ -227,9 +227,9 @@ const DATA: Array[Dictionary] = [
 		&"graphic": preload("res://entities/card/textures/queen_of_hearts.tres"),
 	},
 	{
-		&"rank": Ranks.JACK,
+		&"rank": Ranks.KING,
 		&"suit": Suits.HEARTS,
-		&"graphic": preload("res://entities/card/textures/jack_of_hearts.tres"),
+		&"graphic": preload("res://entities/card/textures/king_of_hearts.tres"),
 	},
 	{
 		&"rank": Ranks.ACE,
@@ -282,9 +282,9 @@ const DATA: Array[Dictionary] = [
 		&"graphic": preload("res://entities/card/textures/ten_of_spades.tres"),
 	},
 	{
-		&"rank": Ranks.KING,
+		&"rank": Ranks.JACK,
 		&"suit": Suits.SPADES,
-		&"graphic": preload("res://entities/card/textures/king_of_spades.tres"),
+		&"graphic": preload("res://entities/card/textures/jack_of_spades.tres"),
 	},
 	{
 		&"rank": Ranks.QUEEN,
@@ -292,9 +292,9 @@ const DATA: Array[Dictionary] = [
 		&"graphic": preload("res://entities/card/textures/queen_of_spades.tres"),
 	},
 	{
-		&"rank": Ranks.JACK,
+		&"rank": Ranks.KING,
 		&"suit": Suits.SPADES,
-		&"graphic": preload("res://entities/card/textures/jack_of_spades.tres"),
+		&"graphic": preload("res://entities/card/textures/king_of_spades.tres"),
 	},
 ]
 
