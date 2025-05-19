@@ -17,10 +17,14 @@ _data = {
 &"face_up_idle": ExtResource("4_w7box")
 }
 
-[node name="CasinoCard" type="MarginContainer"]
-offset_right = 240.0
-offset_bottom = 336.0
+[node name="CasinoCard" type="Control"]
+custom_minimum_size = Vector2(120, 168)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 120.0
+offset_bottom = 168.0
 pivot_offset = Vector2(120, 168)
+mouse_filter = 1
 script = ExtResource("1_k4q5u")
 
 [node name="Animator" type="AnimationPlayer" parent="."]
@@ -32,10 +36,22 @@ libraries = {
 
 [node name="Front" type="TextureRect" parent="."]
 unique_name_in_owner = true
-layout_mode = 2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("6_iw0dl")
 
 [node name="Back" type="TextureRect" parent="."]
 unique_name_in_owner = true
-layout_mode = 2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
 texture = ExtResource("6_iw0dl")
