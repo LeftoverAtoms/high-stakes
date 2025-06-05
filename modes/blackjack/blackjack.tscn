@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://jnlu2dy1mc6w"]
+
+[ext_resource type="PackedScene" uid="uid://pbhxdn6tgxja" path="res://modes/blackjack/blackjack_gui.tscn" id="1_lyde8"]
+
+[node name="Blackjack" type="Node"]
+
+[node name="BlackjackGUI" parent="." instance=ExtResource("1_lyde8")]
