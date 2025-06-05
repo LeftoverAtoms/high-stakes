@@ -1,0 +1,99 @@
+[gd_scene load_steps=2 format=3 uid="uid://pbhxdn6tgxja"]
+
+[ext_resource type="Script" uid="uid://dvle0ho812hc0" path="res://modes/blackjack/blackjack_gui.gd" id="1_3wqkd"]
+
+[node name="BlackjackGUI" type="VBoxContainer"]
+offset_right = 652.0
+offset_bottom = 132.0
+theme_override_constants/separation = 24
+script = ExtResource("1_3wqkd")
+
+[node name="BetSliderAmount" type="Label" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Bet 70"
+horizontal_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 64
+theme_override_constants/margin_right = 64
+
+[node name="BetSlider" type="HSlider" parent="MarginContainer"]
+layout_mode = 2
+scrollable = false
+ticks_on_borders = true
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="GridContainer" type="GridContainer" parent="PanelContainer/MarginContainer"]
+layout_mode = 2
+columns = 4
+
+[node name="SwapCard" type="Button" parent="PanelContainer/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(160, 64)
+layout_mode = 2
+disabled = true
+text = "Swap
+Card"
+
+[node name="DoubleDown" type="Button" parent="PanelContainer/MarginContainer/GridContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(160, 64)
+layout_mode = 2
+text = "Double
+Down"
+
+[node name="Stand" type="Button" parent="PanelContainer/MarginContainer/GridContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(160, 64)
+layout_mode = 2
+text = "Stand"
+
+[node name="Hit" type="Button" parent="PanelContainer/MarginContainer/GridContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(160, 64)
+layout_mode = 2
+text = "Hit"
+
+[node name="Surrender" type="Button" parent="PanelContainer/MarginContainer/GridContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(160, 64)
+layout_mode = 2
+text = "Surrender"
+
+[node name="PanelContainer" type="PanelContainer" parent="PanelContainer/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(160, 64)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer/MarginContainer/GridContainer/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_right = 32
+
+[node name="Label" type="Label" parent="PanelContainer/MarginContainer/GridContainer/PanelContainer/MarginContainer"]
+layout_mode = 2
+text = "$100"
+horizontal_alignment = 1
+
+[node name="Split" type="Button" parent="PanelContainer/MarginContainer/GridContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(160, 64)
+layout_mode = 2
+text = "Split"
+
+[node name="Bet" type="Button" parent="PanelContainer/MarginContainer/GridContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(160, 64)
+layout_mode = 2
+text = "Bet 70"
+
+[connection signal="value_changed" from="MarginContainer/BetSlider" to="." method="_on_bet_changed"]

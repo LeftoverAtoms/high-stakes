@@ -1,5 +1,5 @@
 class_name Card
-extends Node
+extends Control
 
 enum Suits {
 	# Default.
@@ -298,7 +298,19 @@ const DATA: Array[Dictionary] = [
 	},
 ]
 
+const RED_SUITS: Array[Suits] = [
+	Suits.DIAMONDS,
+	Suits.HEARTS,
+]
+
+const BLACK_SUITS: Array[Suits] = [
+	Suits.CLUBS,
+	Suits.SPADES,
+]
+
 const PREFAB: PackedScene = preload("uid://xn10f6pn6n6")
+
+@export var animator: AnimationPlayer
 
 var in_deck: bool
 
@@ -320,6 +332,29 @@ static func new_card(data: Dictionary, parent: Node) -> Card:
 	card.in_deck = parent is Deck
 
 	return card
+
+
+func _get_drag_data(_at_position: Vector2) -> Variant:
+	if in_deck:
+		return null
+
+	var front: TextureRect = %Front.duplicate()
+	front.show()
+
+	set_drag_preview(front)
+
+	return self
+
+
+func face_up(value: bool) -> void:
+	animator.stop()
+
+	if value:
+		animator.play("face_up")
+	else:
+		animator.play("face_down")
+
+	animator.advance(0.1)
 
 
 # TODO: Fetch localized strings from enum keys.
@@ -344,3 +379,15 @@ func is_face() -> bool:
 	return (rank == Ranks.KING
 		 or rank == Ranks.QUEEN
 		 or rank == Ranks.JACK)
+
+
+func is_same_color(other: Card) -> bool:
+	return (suit in RED_SUITS) == (other.suit in RED_SUITS)
+
+
+func is_opposite_color(other: Card) -> bool:
+	return (suit in RED_SUITS) != (other.suit in RED_SUITS)
+
+
+func is_lessor_rank(other: Card) -> bool:
+	return rank < other.rank - 1

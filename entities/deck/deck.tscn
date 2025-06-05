@@ -2,7 +2,9 @@
 
 [ext_resource type="Script" uid="uid://csl4npql78rko" path="res://entities/deck/deck.gd" id="1_gewgj"]
 
-[node name="Deck" type="Control"]
-layout_mode = 3
-anchors_preset = 0
+[node name="Deck" type="MarginContainer"]
+custom_minimum_size = Vector2(240, 336)
+offset_right = 240.0
+offset_bottom = 336.0
+mouse_filter = 2
 script = ExtResource("1_gewgj")

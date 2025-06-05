@@ -1,5 +1,5 @@
 class_name Deck
-extends Node
+extends Control
 
 const PREFAB: PackedScene = preload("uid://chws3cs35dnac")
 
@@ -17,6 +17,7 @@ static func new_deck(parent: Node) -> Deck:
 func shuffle() -> void:
 	for card: Card in _cards:
 		card.in_deck = true
+		card.reparent(self)
 
 	_cards.shuffle()
 
