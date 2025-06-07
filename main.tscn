@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://vnia4uuaq1rn"]
 
 [ext_resource type="Script" uid="uid://maykm7ii3b2i" path="res://modes/solitaire/solitaire.gd" id="1_1bvp3"]
-[ext_resource type="Texture2D" uid="uid://d14g0j7isvqn3" path="res://entities/card/textures/back.tres" id="1_ig7tw"]
+[ext_resource type="Texture2D" uid="uid://d14g0j7isvqn3" path="res://entities/card/materials/back.tres" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://chws3cs35dnac" path="res://entities/deck/deck.tscn" id="2_0xm2m"]
 [ext_resource type="Script" uid="uid://bqx6vx8n0suxt" path="res://entities/card_column.gd" id="3_h2yge"]
 

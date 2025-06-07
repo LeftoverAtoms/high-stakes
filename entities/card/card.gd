@@ -326,7 +326,7 @@ static func new_card(data: Dictionary, parent: Node) -> Card:
 	card.suit = data.get(&"suit", Suits.NONE)
 
 	card._set_name()
-	card._set_textures(data.graphic, null)
+	card._set_materials(data.graphic, null)
 
 	parent.add_child(card, true)
 	card.in_deck = parent is Deck
@@ -370,7 +370,7 @@ func _set_name() -> void:
 	name = ("%s_OF_%s" % [r, s]).to_pascal_case()
 
 
-func _set_textures(front: Texture2D, back: Texture2D) -> void:
+func _set_materials(front: Texture2D, back: Texture2D) -> void:
 	%Front.texture = front
 	%Back.texture = back
 

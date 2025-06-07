@@ -5,7 +5,7 @@
 [ext_resource type="Animation" uid="uid://dyqrhwgspwc6k" path="res://entities/card/animations/face_up_idle.res" id="4_w7box"]
 [ext_resource type="Animation" uid="uid://b3gprgaa27qgv" path="res://entities/card/animations/face_up.res" id="5_4o4x5"]
 [ext_resource type="Animation" uid="uid://b6ie8nxe8klo8" path="res://entities/card/animations/face_down_idle.res" id="6_7r4ut"]
-[ext_resource type="Texture2D" uid="uid://d14g0j7isvqn3" path="res://entities/card/textures/back.tres" id="6_iw0dl"]
+[ext_resource type="Texture2D" uid="uid://d14g0j7isvqn3" path="res://entities/card/materials/back.tres" id="6_iw0dl"]
 [ext_resource type="Animation" uid="uid://3kbcrlknanck" path="res://entities/card/animations/face_down.res" id="7_7r4ut"]
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ducyb"]
