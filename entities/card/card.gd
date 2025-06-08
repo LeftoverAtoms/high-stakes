@@ -315,9 +315,8 @@ var suit: Suits
 static func new_card(data: Dictionary, parent: Node) -> Card:
 	var card: Card = PREFAB.instantiate()
 
-	# Always use get to parse dictionaries.
-	card.rank = data.get(&"rank", Ranks.ACE)
-	card.suit = data.get(&"suit", Suits.CLUBS)
+	card.rank = data.rank
+	card.suit = data.suit
 
 	card._set_name()
 	card._set_materials(data.graphic, null)
@@ -328,16 +327,16 @@ static func new_card(data: Dictionary, parent: Node) -> Card:
 	return card
 
 
-func _get_drag_data(_at_position: Vector2) -> Variant:
-	if in_deck:
-		return null
+# func _get_drag_data(_at_position: Vector2) -> Variant:
+# 	if in_deck:
+# 		return null
 
-	var front: TextureRect = %Front.duplicate()
-	front.show()
+# 	var front: TextureRect = %Front.duplicate()
+# 	front.show()
 
-	set_drag_preview(front)
+# 	set_drag_preview(front)
 
-	return self
+# 	return self
 
 
 func face_up(value: bool) -> void:
