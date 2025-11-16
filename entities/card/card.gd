@@ -2,345 +2,88 @@ class_name Card
 extends Node
 
 enum Suits {
-	# Default.
-	NONE = 0,
-
-	# Standard.
-	CLUBS = 1,
-	DIAMONDS = 2,
-	HEARTS = 3,
-	SPADES = 4,
+	NONE,
+	CLUBS,
+	DIAMONDS,
+	HEARTS,
+	SPADES,
 }
 
 enum Ranks {
-	# Default.
-	NONE = 0,
-
-	# Standard.
-	ACE = 1,
-	TWO = 2,
-	THREE = 3,
-	FOUR = 4,
-	FIVE = 5,
-	SIX = 6,
-	SEVEN = 7,
-	EIGHT = 8,
-	NINE = 9,
-	TEN = 10,
-	JACK = 11,
-	QUEEN = 12,
-	KING = 13,
-
-	# Wildcard.
-	JOKER = 14,
+	NONE,
+	ACE,
+	TWO,
+	THREE,
+	FOUR,
+	FIVE,
+	SIX,
+	SEVEN,
+	EIGHT,
+	NINE,
+	TEN,
+	JACK,
+	QUEEN,
+	KING,
+	JOKER,
 }
 
-const DATA: Array[Dictionary] = [
-	{
-		&"rank": Ranks.ACE,
-		&"suit": Suits.CLUBS,
-		&"graphic": preload("res://entities/card/textures/ace_of_clubs.tres"),
-	},
-	{
-		&"rank": Ranks.TWO,
-		&"suit": Suits.CLUBS,
-		&"graphic": preload("res://entities/card/textures/two_of_clubs.tres"),
-	},
-	{
-		&"rank": Ranks.THREE,
-		&"suit": Suits.CLUBS,
-		&"graphic": preload("res://entities/card/textures/three_of_clubs.tres"),
-	},
-	{
-		&"rank": Ranks.FOUR,
-		&"suit": Suits.CLUBS,
-		&"graphic": preload("res://entities/card/textures/four_of_clubs.tres"),
-	},
-	{
-		&"rank": Ranks.FIVE,
-		&"suit": Suits.CLUBS,
-		&"graphic": preload("res://entities/card/textures/five_of_clubs.tres"),
-	},
-	{
-		&"rank": Ranks.SIX,
-		&"suit": Suits.CLUBS,
-		&"graphic": preload("res://entities/card/textures/six_of_clubs.tres"),
-	},
-	{
-		&"rank": Ranks.SEVEN,
-		&"suit": Suits.CLUBS,
-		&"graphic": preload("res://entities/card/textures/seven_of_clubs.tres"),
-	},
-	{
-		&"rank": Ranks.EIGHT,
-		&"suit": Suits.CLUBS,
-		&"graphic": preload("res://entities/card/textures/eight_of_clubs.tres"),
-	},
-	{
-		&"rank": Ranks.NINE,
-		&"suit": Suits.CLUBS,
-		&"graphic": preload("res://entities/card/textures/nine_of_clubs.tres"),
-	},
-	{
-		&"rank": Ranks.TEN,
-		&"suit": Suits.CLUBS,
-		&"graphic": preload("res://entities/card/textures/ten_of_clubs.tres"),
-	},
-	{
-		&"rank": Ranks.JACK,
-		&"suit": Suits.CLUBS,
-		&"graphic": preload("res://entities/card/textures/jack_of_clubs.tres"),
-	},
-	{
-		&"rank": Ranks.QUEEN,
-		&"suit": Suits.CLUBS,
-		&"graphic": preload("res://entities/card/textures/queen_of_clubs.tres"),
-	},
-	{
-		&"rank": Ranks.KING,
-		&"suit": Suits.CLUBS,
-		&"graphic": preload("res://entities/card/textures/king_of_clubs.tres"),
-	},
-	{
-		&"rank": Ranks.ACE,
-		&"suit": Suits.DIAMONDS,
-		&"graphic": preload("res://entities/card/textures/ace_of_diamonds.tres"),
-	},
-	{
-		&"rank": Ranks.TWO,
-		&"suit": Suits.DIAMONDS,
-		&"graphic": preload("res://entities/card/textures/two_of_diamonds.tres"),
-	},
-	{
-		&"rank": Ranks.THREE,
-		&"suit": Suits.DIAMONDS,
-		&"graphic": preload("res://entities/card/textures/three_of_diamonds.tres"),
-	},
-	{
-		&"rank": Ranks.FOUR,
-		&"suit": Suits.DIAMONDS,
-		&"graphic": preload("res://entities/card/textures/four_of_diamonds.tres"),
-	},
-	{
-		&"rank": Ranks.FIVE,
-		&"suit": Suits.DIAMONDS,
-		&"graphic": preload("res://entities/card/textures/five_of_diamonds.tres"),
-	},
-	{
-		&"rank": Ranks.SIX,
-		&"suit": Suits.DIAMONDS,
-		&"graphic": preload("res://entities/card/textures/six_of_diamonds.tres"),
-	},
-	{
-		&"rank": Ranks.SEVEN,
-		&"suit": Suits.DIAMONDS,
-		&"graphic": preload("res://entities/card/textures/seven_of_diamonds.tres"),
-	},
-	{
-		&"rank": Ranks.EIGHT,
-		&"suit": Suits.DIAMONDS,
-		&"graphic": preload("res://entities/card/textures/eight_of_diamonds.tres"),
-	},
-	{
-		&"rank": Ranks.NINE,
-		&"suit": Suits.DIAMONDS,
-		&"graphic": preload("res://entities/card/textures/nine_of_diamonds.tres"),
-	},
-	{
-		&"rank": Ranks.TEN,
-		&"suit": Suits.DIAMONDS,
-		&"graphic": preload("res://entities/card/textures/ten_of_diamonds.tres"),
-	},
-	{
-		&"rank": Ranks.JACK,
-		&"suit": Suits.DIAMONDS,
-		&"graphic": preload("res://entities/card/textures/jack_of_diamonds.tres"),
-	},
-	{
-		&"rank": Ranks.QUEEN,
-		&"suit": Suits.DIAMONDS,
-		&"graphic": preload("res://entities/card/textures/queen_of_diamonds.tres"),
-	},
-	{
-		&"rank": Ranks.KING,
-		&"suit": Suits.DIAMONDS,
-		&"graphic": preload("res://entities/card/textures/king_of_diamonds.tres"),
-	},
-	{
-		&"rank": Ranks.ACE,
-		&"suit": Suits.HEARTS,
-		&"graphic": preload("res://entities/card/textures/ace_of_hearts.tres"),
-	},
-	{
-		&"rank": Ranks.TWO,
-		&"suit": Suits.HEARTS,
-		&"graphic": preload("res://entities/card/textures/two_of_hearts.tres"),
-	},
-	{
-		&"rank": Ranks.THREE,
-		&"suit": Suits.HEARTS,
-		&"graphic": preload("res://entities/card/textures/three_of_hearts.tres"),
-	},
-	{
-		&"rank": Ranks.FOUR,
-		&"suit": Suits.HEARTS,
-		&"graphic": preload("res://entities/card/textures/four_of_hearts.tres"),
-	},
-	{
-		&"rank": Ranks.FIVE,
-		&"suit": Suits.HEARTS,
-		&"graphic": preload("res://entities/card/textures/five_of_hearts.tres"),
-	},
-	{
-		&"rank": Ranks.SIX,
-		&"suit": Suits.HEARTS,
-		&"graphic": preload("res://entities/card/textures/six_of_hearts.tres"),
-	},
-	{
-		&"rank": Ranks.SEVEN,
-		&"suit": Suits.HEARTS,
-		&"graphic": preload("res://entities/card/textures/seven_of_hearts.tres"),
-	},
-	{
-		&"rank": Ranks.EIGHT,
-		&"suit": Suits.HEARTS,
-		&"graphic": preload("res://entities/card/textures/eight_of_hearts.tres"),
-	},
-	{
-		&"rank": Ranks.NINE,
-		&"suit": Suits.HEARTS,
-		&"graphic": preload("res://entities/card/textures/nine_of_hearts.tres"),
-	},
-	{
-		&"rank": Ranks.TEN,
-		&"suit": Suits.HEARTS,
-		&"graphic": preload("res://entities/card/textures/ten_of_hearts.tres"),
-	},
-	{
-		&"rank": Ranks.JACK,
-		&"suit": Suits.HEARTS,
-		&"graphic": preload("res://entities/card/textures/jack_of_hearts.tres"),
-	},
-	{
-		&"rank": Ranks.QUEEN,
-		&"suit": Suits.HEARTS,
-		&"graphic": preload("res://entities/card/textures/queen_of_hearts.tres"),
-	},
-	{
-		&"rank": Ranks.KING,
-		&"suit": Suits.HEARTS,
-		&"graphic": preload("res://entities/card/textures/king_of_hearts.tres"),
-	},
-	{
-		&"rank": Ranks.ACE,
-		&"suit": Suits.SPADES,
-		&"graphic": preload("res://entities/card/textures/ace_of_spades.tres"),
-	},
-	{
-		&"rank": Ranks.TWO,
-		&"suit": Suits.SPADES,
-		&"graphic": preload("res://entities/card/textures/two_of_spades.tres"),
-	},
-	{
-		&"rank": Ranks.THREE,
-		&"suit": Suits.SPADES,
-		&"graphic": preload("res://entities/card/textures/three_of_spades.tres"),
-	},
-	{
-		&"rank": Ranks.FOUR,
-		&"suit": Suits.SPADES,
-		&"graphic": preload("res://entities/card/textures/four_of_spades.tres"),
-	},
-	{
-		&"rank": Ranks.FIVE,
-		&"suit": Suits.SPADES,
-		&"graphic": preload("res://entities/card/textures/five_of_spades.tres"),
-	},
-	{
-		&"rank": Ranks.SIX,
-		&"suit": Suits.SPADES,
-		&"graphic": preload("res://entities/card/textures/six_of_spades.tres"),
-	},
-	{
-		&"rank": Ranks.SEVEN,
-		&"suit": Suits.SPADES,
-		&"graphic": preload("res://entities/card/textures/seven_of_spades.tres"),
-	},
-	{
-		&"rank": Ranks.EIGHT,
-		&"suit": Suits.SPADES,
-		&"graphic": preload("res://entities/card/textures/eight_of_spades.tres"),
-	},
-	{
-		&"rank": Ranks.NINE,
-		&"suit": Suits.SPADES,
-		&"graphic": preload("res://entities/card/textures/nine_of_spades.tres"),
-	},
-	{
-		&"rank": Ranks.TEN,
-		&"suit": Suits.SPADES,
-		&"graphic": preload("res://entities/card/textures/ten_of_spades.tres"),
-	},
-	{
-		&"rank": Ranks.JACK,
-		&"suit": Suits.SPADES,
-		&"graphic": preload("res://entities/card/textures/jack_of_spades.tres"),
-	},
-	{
-		&"rank": Ranks.QUEEN,
-		&"suit": Suits.SPADES,
-		&"graphic": preload("res://entities/card/textures/queen_of_spades.tres"),
-	},
-	{
-		&"rank": Ranks.KING,
-		&"suit": Suits.SPADES,
-		&"graphic": preload("res://entities/card/textures/king_of_spades.tres"),
-	},
-]
+const TEXTURES: Dictionary[String, Texture2D] = {
+	"ACE_OF_CLUBS": preload("uid://br31jll7d6oc2"),
+	"ACE_OF_DIAMONDS": preload("uid://ce4ahjhwj7gqs"),
+	"ACE_OF_HEARTS": preload("uid://ckmihq4yhqc8f"),
+	"ACE_OF_SPADES": preload("uid://dqpvdwo80hsdu"),
+	"TWO_OF_CLUBS": preload("uid://tffu5e46v4ia"),
+	"TWO_OF_DIAMONDS": preload("uid://dvqj8n8tju263"),
+	"TWO_OF_HEARTS": preload("uid://di28nkr7rmqyy"),
+	"TWO_OF_SPADES": preload("uid://ekj7r7qtwvmr"),
+	"THREE_OF_CLUBS": preload("uid://12h3ty852ima"),
+	"THREE_OF_DIAMONDS": preload("uid://catk3i5m3mwjy"),
+	"THREE_OF_HEARTS": preload("uid://bix3mawjen52m"),
+	"THREE_OF_SPADES": preload("uid://16hb6g4gwhr8"),
+	"FOUR_OF_CLUBS": preload("uid://cgstig7nm1y2f"),
+	"FOUR_OF_DIAMONDS": preload("uid://l525rrmb13g8"),
+	"FOUR_OF_HEARTS": preload("uid://3rxpo35t5whl"),
+	"FOUR_OF_SPADES": preload("uid://bqtj7al5oivxj"),
+	"FIVE_OF_CLUBS": preload("uid://c0n27aii86xqs"),
+	"FIVE_OF_DIAMONDS": preload("uid://c6y0g6g2ilto6"),
+	"FIVE_OF_HEARTS": preload("uid://bcpcfbdq4lnxh"),
+	"FIVE_OF_SPADES": preload("uid://bp5sq1xmof2pn"),
+	"SIX_OF_CLUBS": preload("uid://bkp2x5sb5ovpx"),
+	"SIX_OF_DIAMONDS": preload("uid://bedhg1yeny5qq"),
+	"SIX_OF_HEARTS": preload("uid://biiv7v1x7uft3"),
+	"SIX_OF_SPADES": preload("uid://cl76l7rwr2m3w"),
+	"SEVEN_OF_CLUBS": preload("uid://cwlamnfp18407"),
+	"SEVEN_OF_DIAMONDS": preload("uid://dmagr4uc4orp4"),
+	"SEVEN_OF_HEARTS": preload("uid://cso7bjsihl7rf"),
+	"SEVEN_OF_SPADES": preload("uid://bplgkw7mww3xt"),
+	"EIGHT_OF_CLUBS": preload("uid://cu2l4xjiyu807"),
+	"EIGHT_OF_DIAMONDS": preload("uid://bgtsddq5423lv"),
+	"EIGHT_OF_HEARTS": preload("uid://cnx8ncpefewlk"),
+	"EIGHT_OF_SPADES": preload("uid://mf6ttdvvd05k"),
+	"NINE_OF_CLUBS": preload("uid://56sfs2w2btjk"),
+	"NINE_OF_DIAMONDS": preload("uid://cbyb4vobkjwq6"),
+	"NINE_OF_HEARTS": preload("uid://dw7giaoesnxsb"),
+	"NINE_OF_SPADES": preload("uid://dpokebe1fv8gu"),
+	"TEN_OF_CLUBS": preload("uid://1tvph4mn65rh"),
+	"TEN_OF_DIAMONDS": preload("uid://2o3404wpug60"),
+	"TEN_OF_HEARTS": preload("uid://ca3tbg5gogoa0"),
+	"TEN_OF_SPADES": preload("uid://clrkwiv074try"),
+	"JACK_OF_CLUBS": preload("uid://cc1c8sogbv2md"),
+	"JACK_OF_DIAMONDS": preload("uid://dhu0pdux4dj28"),
+	"JACK_OF_HEARTS": preload("uid://blyrharuqmfsy"),
+	"JACK_OF_SPADES": preload("uid://dbxb6n13667we"),
+	"QUEEN_OF_CLUBS": preload("uid://droax1eao3hga"),
+	"QUEEN_OF_DIAMONDS": preload("uid://psu7sapk2s0m"),
+	"QUEEN_OF_HEARTS": preload("uid://bhaaa553f8ytk"),
+	"QUEEN_OF_SPADES": preload("uid://ceuv6sprnnofj"),
+	"KING_OF_CLUBS": preload("uid://dx8p1xc3t34wt"),
+	"KING_OF_DIAMONDS": preload("uid://c770mci5bwyud"),
+	"KING_OF_HEARTS": preload("uid://obvd68dmd0sw"),
+	"KING_OF_SPADES": preload("uid://g7r7rmlxay1e"),
+}
 
-const PREFAB: PackedScene = preload("uid://xn10f6pn6n6")
-
-var in_deck: bool
-
-var rank: Ranks
-var suit: Suits
+var texture_sheet: Texture2D
 
 
-static func new_card(data: Dictionary, parent: Node) -> Card:
-	var card: Card = PREFAB.instantiate()
-
-	# Always use get to parse dictionaries.
-	card.rank = data.get(&"rank", Ranks.NONE)
-	card.suit = data.get(&"suit", Suits.NONE)
-
-	card._set_name()
-	card._set_textures(data.graphic, null)
-
-	parent.add_child(card, true)
-	card.in_deck = parent is Deck
-
-	return card
-
-
-# TODO: Fetch localized strings from enum keys.
-func _set_name() -> void:
-	# Use variant because null strings do not exist.
-	var r: Variant = Ranks.find_key(rank)
-	var s: Variant = Suits.find_key(suit)
-
-	# Name cannot be salvaged will appear null or none.
-	assert(r != null and rank != Ranks.NONE, "Ranks[%s] is invalid" % [rank])
-	assert(s != null and suit != Suits.NONE, "Suits[%s] is invalid" % [suit])
-
-	name = ("%s_OF_%s" % [r, s]).to_pascal_case()
-
-
-func _set_textures(front: Texture2D, back: Texture2D) -> void:
-	%Front.texture = front
-	%Back.texture = back
-
-
-func is_face() -> bool:
-	return (rank == Ranks.KING
-		 or rank == Ranks.QUEEN
-		 or rank == Ranks.JACK)
+func _init(rank: Ranks, suit: Suits) -> void:
+	name = "%s_OF_%s" % [rank, suit]
